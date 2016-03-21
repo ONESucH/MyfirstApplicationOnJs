@@ -1,0 +1,48 @@
+.youTuberBack {
+	color: #fff !important;
+	display: none;
+	z-index: 1100;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	background: #000;
+	text-align: center; 
+}
+#youTuberContainer {
+	display: none;
+	z-index: 1102;
+	position: fixed;	
+}
+#youTuber {
+	text-align: center;
+	box-shadow: 0 0 40px #333;
+}
+#youTuberLoading {
+	position: fixed;
+	z-index: 1101;
+	font-size: 1.5em;
+	top: 49%;
+	width: 5%;
+	text-align: center;
+	left: 45%;
+}
+#youTuberClose {
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	padding: 3px 13px;
+	z-index: 1101;
+	font-size: 25px !important;
+	text-shadow: 0 0 10px #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.1s; 
+	-o-transition-duration: 0.1s; 
+	-moz-transition-duration: 0.1s; 
+	transition-duration: 0.1s;
+}
+#youTuberClose:hover {
+	background: #333;
+}
