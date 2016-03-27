@@ -1,3 +1,32 @@
-.BootomMenu {
-    padding: 500px 0 0 0;
+#carousel {
+    width:960px;
+    margin: 60px auto;
+    border:1px solid #222;
+    height:300px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+}
+#carousel img {
+    visibility:hidden; /* hide images until carousel can handle them */
+    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+.split-left {
+    width:450px;
+    float:left;
+}
+.split-right {
+    width:400px;
+    float:left;
+    margin-left:10px;
+}
+#callback-output {
+    height:250px;
+    overflow:scroll;
+}
+textarea#newoptions {
+    width:430px;
+}
+.nav {
+    width: 80px; margin: 20px auto
 }
