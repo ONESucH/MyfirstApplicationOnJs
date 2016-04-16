@@ -1,43 +1,4 @@
-/*!
- * jCarousel - Riding carousels with jQuery
- *   http://sorgalla.com/jcarousel/
- *
- * Copyright (c) 2006 Jan Sorgalla (http://sorgalla.com)
- * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
- * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
- *
- * Built on top of the jQuery library
- *   http://jquery.com
- *
- * Inspired by the "Carousel Component" by Bill Scott
- *   http://billwscott.com/carousel/
- */
-
 (function($) {
-    /**
-     * Creates a carousel for all matched elements.
-     *
-     * @example $("#mycarousel").jcarousel();
-     * @before <ul id="mycarousel" class="jcarousel-skin-name"><li>First item</li><li>Second item</li></ul>
-     * @result
-     *
-     * <div class="jcarousel-skin-name">
-     *   <div class="jcarousel-container">
-     *     <div class="jcarousel-clip">
-     *       <ul class="jcarousel-list">
-     *         <li class="jcarousel-item-1">First item</li>
-     *         <li class="jcarousel-item-2">Second item</li>
-     *       </ul>
-     *     </div>
-     *     <div disabled="disabled" class="jcarousel-prev jcarousel-prev-disabled"></div>
-     *     <div class="jcarousel-next"></div>
-     *   </div>
-     * </div>
-     *
-     * @method jcarousel
-     * @return jQuery
-     * @param o {Hash|String} A set of key/value pairs to set as configuration properties or a method name to call on a formerly created instance.
-     */
     $.fn.jcarousel = function(o) {
         if (typeof o == 'string') {
             var instance = $(this).data('jcarousel'), args = Array.prototype.slice.call(arguments, 1);
@@ -77,15 +38,6 @@
         buttonPrevCallback: null
     };
 
-    /**
-     * The jCarousel object.
-     *
-     * @constructor
-     * @class jcarousel
-     * @param e {HTMLElement} The element to create the carousel for.
-     * @param o {Object} A set of key/value pairs to set as configuration properties.
-     * @cat Plugins/jCarousel
-     */
     $.jcarousel = function(e, o) {
         this.options    = $.extend({}, defaults, o || {});
 
